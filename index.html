@@ -43,12 +43,42 @@
                 <div class="form-group mt-2">
                     <label for="contactField">Address</label>
                     <textarea
+                    rows="5"
                     id="contactField"
                     placeholder="Enter Your Address"
                     class="form-control"
-                    row="5"
                     ></textarea>
-                    </div>
+                </div>
+
+                <p class="text-secondary my-3"> <b> Important Links</b></p>
+
+                <div class="form-group mt-2">
+                    <label for="githubfield">Github</label>
+                    <input 
+                    type="text" 
+                    id="githubfield"
+                    placeholder="Enter Github Profile Link"
+                    class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="linkedinfield">LinkedIn</label>
+                    <input 
+                    type="text" 
+                    id="linkedinield"
+                    placeholder="Enter LinkedIn Profile Link"
+                    class="form-control">
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="portfoliofield">Portfolio</label>
+                    <input 
+                    type="text" 
+                    id="portfoliofield"
+                    placeholder="Enter Portfolio website link"
+                    class="form-control">
+                </div>
+
 
                 
 
@@ -56,10 +86,53 @@
 
             <div class="col-md-6">
                 <h3>PROFESSIONAL INFORMATION</h3>
+
+                <div class="form-group mt-2">
+                    <label for="">Objective</label>
+                    <textarea
+                    rows="5"
+                    placeholder="Enter here"
+                    class="form-control"
+                    ></textarea>
+                </div>
+
+                <div class="form-group mt-2" id="we">
+                    <label for="">Work Experience</label>
+                    <textarea
+                    rows="3"
+                    placeholder="Enter here"
+                    class="form-control weField"
+                    ></textarea>
+
+
+                    <div class="container text-center mt-2" id="weAddButton">
+                        <button onclick="addNewWEField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+
+                </div>
+
+                <div class="form-group mt-2" id="aq">
+                    <label for="">Academic Qualification</label>
+                    <textarea
+                    rows="3"
+                    placeholder="Enter here"
+                    class="form-control qeField"
+                    ></textarea>
+
+                    <div class="container text-center mt-2" id=aqAddButton>
+                        <button onclick="addNewAQField()" class="btn btn-primary btn-sm">Add</button>
+                    </div>
+
+                </div>
+
+
             </div>
 
         </div>
 
+        <div class="container text-center mt-3">
+             <button class="btn btn-primary btn-lg">Generate CV</button>   
+        </div>
     
             
         
