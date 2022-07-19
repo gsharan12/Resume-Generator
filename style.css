@@ -1,6 +1,10 @@
 
 
 #cv-form{
+    /*display: none;*/
+}
+
+#cv-template{
     display: none;
 }
 

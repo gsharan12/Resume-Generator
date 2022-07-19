@@ -44,7 +44,7 @@
                     <label for="contactField">Address</label>
                     <textarea
                     rows="5"
-                    id="contactField"
+                    id="addressField"
                     placeholder="Enter Your Address"
                     class="form-control"
                     ></textarea>
@@ -65,7 +65,7 @@
                     <label for="linkedinfield">LinkedIn</label>
                     <input 
                     type="text" 
-                    id="linkedinield"
+                    id="linkedinfield"
                     placeholder="Enter LinkedIn Profile Link"
                     class="form-control">
                 </div>
@@ -90,6 +90,7 @@
                 <div class="form-group mt-2">
                     <label for="">Objective</label>
                     <textarea
+                    id="objectiveField"
                     rows="5"
                     placeholder="Enter here"
                     class="form-control"
@@ -116,7 +117,7 @@
                     <textarea
                     rows="3"
                     placeholder="Enter here"
-                    class="form-control qeField"
+                    class="form-control eqField"
                     ></textarea>
 
                     <div class="container text-center mt-2" id=aqAddButton>
@@ -131,7 +132,7 @@
         </div>
 
         <div class="container text-center mt-3">
-             <button class="btn btn-primary btn-lg">Generate CV</button>   
+             <button onclick="generateCV()" class="btn btn-primary btn-lg">Generate CV</button>   
         </div>
     
             
@@ -139,6 +140,7 @@
 
     </div>
 
+    <!-- cv template -->
     <div class="container" id="cv-template">
         
 
@@ -151,18 +153,30 @@
                 class="img-fluid myimg"/>
 
                 <div class="container">
-                    <p>Gaurav Sharan</p>
-                    <p>+91754132141</p>
-                    <p>A/10 Sector 62 Noida, India</p>
+                    <p id="nameT1">Gaurav Sharan</p>
+                    <p id="contactT">+91754132141</p>
+                    <p id="addressT">A/10 Sector 62 Noida, India</p>
 
                     <hr />
+
+                    <p>
+                        <a id="gitT" href="#1">https://github.com/gsharan12</a>
+                    </p>
+
+                    <p> 
+                        <a id="linkedT" href="#2">https://www.linkedin.com/in/gaurav-sharan-1bb346194/</a>
+                    </p>
+
+                    <p>
+                        <a id="portT" href="#3">https://www.portfolio/in/gaurav-sharan/</a>
+                    </p>
 
                 </div>
 
             </div>
             <div class="col-md-8 py-5">
 
-                <h1 class=""text-center style="font-weight: 900">
+                <h1 id="nameT2" class=""text-center style="font-weight: 900">
                 Gaurav Sharan
                 </h1>
 
@@ -171,7 +185,7 @@
                         <h4>Objective</h4>
                     </div>
                     <div class="card body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatibus nihil non maxime quod! Aspernatur, dolores accusantium possimus distinctio cupiditate, molestias reprehenderit adipisci ipsa exercitationem id, dolorem animi voluptatem atque ipsam ab nemo sit est. Ad provident natus facilis facere, quaerat soluta dolorum necessitatibus. Numquam nostrum voluptatibus eveniet eos consequatur?</p>
+                        <p id="objectiveT">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate voluptatibus nihil non maxime quod! Aspernatur, dolores accusantium possimus distinctio cupiditate, molestias reprehenderit adipisci ipsa exercitationem id, dolorem animi voluptatem atque ipsam ab nemo sit est. Ad provident natus facilis facere, quaerat soluta dolorum necessitatibus. Numquam nostrum voluptatibus eveniet eos consequatur?</p>
                     </div>
 
                 </div>
@@ -184,15 +198,11 @@
                     </div>
                     <div class="card body">
                         
-                        <ul>
+                        <ul id="weT">
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
-                        </ul>
-
-                        <ul>
+                        
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
-                        </ul>
-
-                        <ul>
+                       
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
                         </ul>
                     </div>
@@ -206,15 +216,11 @@
                     </div>
                     <div class="card body">
                         
-                        <ul>
+                        <ul id="aqT">
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
-                        </ul>
-
-                        <ul>
+                        
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
-                        </ul>
-
-                        <ul>
+                       
                             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ab?</li>
                         </ul>
                     </div>
@@ -223,7 +229,7 @@
 
 
                 <div class="container mt-3 text-center">
-                    <button class="btn background">
+                    <button onclick="printCV()" class="btn background">
                         Print CV
                     </button>
                 </div>
